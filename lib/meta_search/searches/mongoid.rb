@@ -74,12 +74,12 @@ module MetaSearch
         relation
       end
 
-      def method_missing name, *attrs, &block
+      def method_missing(name, *attrs, &block)
         relation.send(name, *attrs, &block)
       end
 
 
-      def respond_to? name, include_private = false
+      def respond_to?(name, include_private = false)
         name.to_s =~ metasearch_regexp or super
       end
 

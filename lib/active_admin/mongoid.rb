@@ -26,14 +26,4 @@ module ActiveAdmin
       end
     end
   end
-
-  # class << self
-  #   alias setup_without_mongoid setup
-  #
-  #   # Load monkey patches *after* the setup process
-  #   def setup *args, &block
-  #     setup_without_mongoid *args, &block
-  #
-  #   end
-  # end
 end

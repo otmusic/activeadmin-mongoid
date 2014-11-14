@@ -1,19 +1,20 @@
 class ActiveAdmin::FilterFormBuilder
   def default_input_type(method, options = {})
-    if column = column_for(method)
+    column = column_for(method)
+    if column
       case column.type.name.downcase.to_sym
       when :date, :datetime, :time;   :date_range
       when :string, :text, :objectl;  :string
       when :float, :decimal;          :numeric
       when :integer
         return :select if reflection_for(method.to_s.gsub('_id','').to_sym)
-        return :numeric
+        :numeric
       end
     elsif is_association?(method)
       return :select
     else
       # dirty but allows to create filters for hashes
-      return :string
+      :string
     end
   end
 

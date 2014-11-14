@@ -2,9 +2,9 @@ source 'https://rubygems.org'
 
 ruby '2.1.4'
 
-gem 'ransack', github: 'activerecord-hackery/ransack'
-
-gem 'activeadmin', github: 'activeadmin'
+# gem 'ransack', github: 'activerecord-hackery/ransack'
+#
+# gem 'activeadmin', github: 'activeadmin'
 
 # Test app stuff
 

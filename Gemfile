@@ -1,9 +1,6 @@
 source 'https://rubygems.org'
 
-# Declare your gem's dependencies in activeadmin-mongoid.gemspec.
-# Bundler will treat runtime dependencies like base dependencies, and
-# development dependencies will be added by default to the :development group.
-gemspec
+ruby '2.1.4'
 
 gem 'ransack', github: 'activerecord-hackery/ransack'
 
@@ -11,24 +8,24 @@ gem 'activeadmin', github: 'activeadmin'
 
 # Test app stuff
 
-gem 'rails', '~> 4.0'
+gem 'rails', '~> 4.1.7'
 
-gem 'devise'
+gem 'devise', '~> 3.4.1'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 4.0'
-  gem 'coffee-rails', '~> 4.0'
+  gem 'sass-rails',   '~> 4.0.3'
+  gem 'coffee-rails', '~> 4.0.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier', '~> 2.5.1'
 end
 
-gem 'jquery-rails'
-gem 'jquery-ui-rails'
-gem 'jslint'
+gem 'jquery-rails', '~> 3.1.2'
+gem 'jquery-ui-rails', '~> 5.0.2'
+gem 'jslint', '~> 1.2.0'
 
 group :test do
   gem 'capybara'

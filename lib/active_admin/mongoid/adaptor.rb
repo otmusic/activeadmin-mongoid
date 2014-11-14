@@ -45,13 +45,13 @@ module ActiveAdmin
         when /_in$/
           [get_attribute(k, '_in').to_sym.in, v]
         when /_gt$/
-          [get_attribute(k, "_gt").to_sym.gt, v]
+          [get_attribute(k, '_gt').to_sym.gt, v]
         when /_lt$/
-          [get_attribute(k, "_lt").to_sym.lt, v]
+          [get_attribute(k, '_lt').to_sym.lt, v]
         when /_gte$/
-          [get_attribute(k, "_gte").to_sym.gte, v]
+          [get_attribute(k, '_gte').to_sym.gte, v]
         when /_lte$/
-          [get_attribute(k, "_lte").to_sym.lte, v]
+          [get_attribute(k, '_lte').to_sym.lte, v]
         else
           [k, v]
         end

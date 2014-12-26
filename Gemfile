@@ -8,7 +8,7 @@ ruby '2.1.4'
 
 # Test app stuff
 
-gem 'rails', '~> 4.1.7'
+gem 'rails', '~> 4.1.8'
 
 gem 'devise', '~> 3.4.1'
 
